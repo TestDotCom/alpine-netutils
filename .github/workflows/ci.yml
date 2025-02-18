@@ -31,5 +31,5 @@ jobs:
             --context dir:///workspace/ \
             --dockerfile Dockerfile \
             --cache=true \
-            --cache-repo ${{ env.REGISTRY }}/${{ GITHUB_REPOSITORY }}/${{ IMAGE_NAME }}-cache \
-            --destination ${{ env.REGISTRY }}/${{ GITHUB_REPOSITORY }}/${{ IMAGE_NAME }}:latest
+            --cache-repo ${{ env.REGISTRY }}/${{ env.GITHUB_REPOSITORY }}/${{ env.IMAGE_NAME }}-cache \
+            --destination ${{ env.REGISTRY }}/${{ env.GITHUB_REPOSITORY }}/${{ env.IMAGE_NAME }}:latest
